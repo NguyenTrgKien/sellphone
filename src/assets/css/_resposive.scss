@@ -1,0 +1,265 @@
+@media (max-width: 1138px){
+    .header{
+        .header__top{
+            padding: 0 10rem;
+        }
+    }
+    .main{
+        padding: 0 10rem;
+        .mobilephone{
+            .mobilephone-product{
+                grid-template-areas: 
+                "it1 it2 it3 it4"
+                "it5 it5 it5 it5"
+                "it6 it7 it8 it9";
+                &__box.box1{ grid-area: it1; }
+                &__box.box2{ grid-area: it2; }
+                &__box.box3{ grid-area: it3; }
+                &__box.box4{ 
+                    grid-area: it5; 
+                }
+                &__box.box5{ grid-area: it4; }
+                &__box.box6{ grid-area: it6; }
+                &__box.box7{ grid-area: it7; }
+                &__box.box8{ grid-area: it8; }
+                &__box.box9{ grid-area: it9; }
+            }
+        }
+        .accessory{
+            .accessory-product{
+                grid-template-areas: 
+                "item1 item1 item1 item1 item1"
+                "item2 item3 item4 item5 item6"
+                "item7 item8 item9 item10 item11";
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+    .footer{
+        padding: 2.5rem 10rem 14rem 10rem;
+        &__nav,
+        &__bottom{
+            margin: 0 -10rem;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    
+    .accessory{
+        .accessory-product{
+            grid-template-areas: 
+            "item1 item1 item2 item3"
+            "item4 item5 item6 item7"
+            "item8 item9 item10 item11";
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        }
+    }
+    .footer{
+        &__wrap{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+    }
+}
+
+@media (max-width: 868px){
+    .header{
+        .header__top{
+            padding: 0 6rem;
+        }
+    }
+    .main{
+        padding: 0 6rem;
+        .mobilephone{
+            .mobilephone-product{
+                grid-template-areas: 
+                "it1 it1"
+                "it2 it3"
+                "it4 it5"
+                "it6 it7"
+                "it8 it9";
+                &__box.box1{ grid-area: it5; }
+                &__box.box2{ grid-area: it2; }
+                &__box.box3{ grid-area: it3; }
+                &__box.box4{ 
+                    grid-area: it1; 
+                }
+                &__box.box5{ grid-area: it4; }
+                &__box.box6{ grid-area: it6; }
+                &__box.box7{ grid-area: it7; }
+                &__box.box8{ grid-area: it8; }
+                &__box.box9{ grid-area: it9; }
+                &__box{
+                    &-item{
+                        &-img{
+                            .mobile-img{
+                                height: 26rem;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        padding: 2.5rem 6rem 14rem 6rem;
+        &__nav,
+        &__bottom{
+            margin: 0 -6rem;
+        }
+        &__wrap{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        .header__top{
+            justify-content: space-between;
+            padding: 0 5rem;
+            &-menu{
+                display: block;
+            }
+            &-select,
+            &-search{
+                display: none;
+            }
+            &-cart{
+                margin-left: 0;
+            }
+        }
+        .nav{
+            display: none !important;
+        }
+    }
+    .main{
+        padding: 0 5rem;
+        .accessory{
+            .accessory-product{
+                grid-template-areas:
+                "item1 item1"
+                "item2 item3"
+                "item4 item5"
+                "item6 item7"
+                "item8 item9"
+                "item10 item11";
+                grid-template-columns: 1fr 1fr;
+                
+            }
+        }
+        
+    }
+    .footer{
+        padding: 2.5rem 5rem 14rem 5rem;
+        &__nav,
+        &__bottom{
+            margin: 0 -5rem;
+        }
+    }
+}
+
+@media (max-width: 568px){
+    .header{
+        .header__top{
+            padding: 0 3rem;
+        }
+    }
+    .main{
+        padding: 0 3rem;
+        .section-ad{
+            grid-template-areas:
+            "imgLeft"
+            "imgRightTop"
+            "imgRightBottom";
+        }
+        .laptops-name{
+            .laptops-name__link{
+                font-size: 1.2rem;
+                padding: 0 .8rem;
+            }
+            .laptops-name__link.font{
+                font-size: 1.4rem;
+            }
+        }
+        .product-laptops{
+            .laptops-img-product{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        .mobilephone{
+            .mobilephone-name{
+                .mobilephone-name__link{
+                    font-size: 1.2rem;
+                    padding: 0 .8rem;
+                }
+                .mobilephone-name__link.font{
+                    font-size: 1.4rem;
+                }
+            }
+            .mobilephone-product{
+                grid-template-areas:
+                "it4"
+                "it1"
+                "it2"
+                "it3"
+                "it5"
+                "it6"
+                "it7"
+                "it8"
+                "it9";
+                &__box.box1{ grid-area: it1; }
+                &__box.box2{ grid-area: it2; }
+                &__box.box3{ grid-area: it3; }
+                &__box.box4{ 
+                    grid-area: it4; 
+                }
+                &__box.box5{ grid-area: it5; }
+                &__box.box6{ grid-area: it6; }
+                &__box.box7{ grid-area: it7; }
+                &__box.box8{ grid-area: it8; }
+                &__box.box9{ grid-area: it9; }
+                &__box{
+                    &-item{
+                        &-img{
+                            .mobile-img{
+                                height: 29rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .accessory{
+            &-name{
+                &__link{
+                    font-size: 1.2rem;
+                    padding: 0 .8rem;
+                }
+                &__link.font{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .addvertise{
+            .addvertise-wrap{
+                flex-direction: column;
+                &__img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .footer{
+        &__nav{
+            &-item{
+                font-size: .8rem;
+            }
+        }
+    }
+}

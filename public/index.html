@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+    <title>Sell Phone</title>
+</head>
+<body>
+    <div class="layout">
+        <header class="header">
+            <div class="header__top">
+                <div class="header__top-menu">
+                    content
+                </div>
+                <div class="header__top-logo">
+                    <img src="http://mauweb.monamedia.net/laptoppro/wp-content/uploads/2018/02/logo-laptoppro-white.png" alt="" class="header__top-logo-img">
+                </div>
+                <select name="product" id="header__top-select" class="header__top-select">
+                    <option value="all">All</option>
+                    <option value="desktop">Desktop</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="phu-kien">Phụ kiện</option>
+                </select>
+                <div class="header__top-search">
+                    <input type="text" class="header__top-search-input" placeholder="Nhập thông tin cần tìm">
+                    <i class="fa-solid fa-magnifying-glass header__top-search-icon"></i>
+                </div>
+                <div class="header__top-cart">
+                    <i class="fa-solid fa-cart-shopping header__top-cart-icon"></i>
+                    <div class="header__top-cart-quantity">0</div>
+                    <div class="header__top-cart-wrap">
+                        <ul class="header__top-cart-wrap-list">
+                            <li class="header__top-cart-wrap-list-title">
+                                Sản phẩm mới thêm
+                            </li>
+                            <li class="header__top-cart-wrap-list-item">
+                                <a href="#" class="cart-link">
+                                    <div class="cart-link__product">
+                                        <img src="https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-tim-thumb-600x600.jpg" alt="" class="cart-link__product-img">
+                                    </div>
+                                    <div class="cart-link__nameproduct">
+                                        iPhone 14 Pro Max giá tốt, trả góp 0%, chính hãng, ưu đãi hấp dẫn
+                                    </div>
+                                    <div class="cart-link__price">
+                                        25.000.000đ
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header__top-cart-wrap-list-item">
+                            <a href="#" class="cart-link">
+                                    <div class="cart-link__product">
+                                        <img src="https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-tim-thumb-600x600.jpg" alt="" class="cart-link__product-img">
+                                    </div>
+                                    <div class="cart-link__nameproduct">
+                                        iPhone 14 Pro Max giá tốt, trả góp 0%, chính hãng, ưu đãi hấp dẫn
+                                    </div>
+                                    <div class="cart-link__price">
+                                        25.000.000đ
+                                    </div>
+                            </a></li>
+                            
+                            
+                        </ul>
+                        <div class="header__top-cart-wrap-info">
+                            <span class="info-product">
+                                (<span class="info-product-quantity">0</span>)Thêm Vào Giỏ Hàng
+                            </span>
+                            <button class="info-product-btn">
+                                Xem Giỏ Hàng    
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-item-link">
+                            SẢN PHẨM
+                        </a>
+                        <div class="item-list">
+                            <div class="item-list__left">
+                                <a href="#" class="item-list__left-item title">
+                                    <i class="fa-solid fa-laptop item-list__left-item-icon"></i> LAPTOP
+                                </a>
+                                <a href="#" class="item-list__left-item">
+                                    Macbook
+                                </a>
+                                <a href="#" class="item-list__left-item">
+                                    Laptop Asus
+                                </a>
+                                <a href="#" class="item-list__left-item">
+                                    Laptop Dell
+                                </a>
+                                <a href="#" class="item-list__left-item">
+                                    Laptop HP
+                                </a>
+                                <a href="#" class="item-list__left-item">
+                                    Laptop Lenovo
+                                </a>
+                            </div>
+                            <div class="item-list__right">
+                                <a href="#" class="item-list__right-item title">
+                                    <i class="fa-solid fa-desktop item-list__right-item-icon"></i> ĐIỆN THOẠI
+                                </a>
+                                <a href="#" class="item-list__right-item">
+                                    Apple
+                                </a>
+                                <a href="#" class="item-list__right-item">
+                                    Samsung
+                                </a>
+                                <a href="#" class="item-list__right-item">
+                                    Oppo
+                                </a>
+                                <a href="#" class="item-list__right-item">
+                                    Nokia
+                                </a>
+                                <a href="#" class="item-list__right-item">
+                                    Realme
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-item-link">
+                            PHỤ KIỆN
+                        </a>
+                        <div class="nav__list-item-list">
+                            <a href="#" class="items">Bao da - Ốp lưng - Dán màn hình</a>
+                            <a href="#" class="items">Loa</a>
+                            <a href="#" class="items">Máy nghe nhạc</a>
+                            <a href="#" class="items">Tai nghe</a>
+                        </div>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-item-link">
+                            KHUYẾN MÃI
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-item-link">
+                            TUYỂN DỤNG
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-item-link">
+                            TIN CÔNG NGHỆ
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-item-link">
+                            DỊCH VỤ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main">
+            <section class="section-ad">
+                <a href="#" class="section-ad__left">
+                    <img src="/src/assets/images/qc.png" alt="" class="section-ad__left-img">
+                    <div class="section-ad__left-buy">
+                        Mua laptop giảm giá
+                    </div>
+                </a>
+                <div class="section-ad__right-top">
+                    <div class="section-ad__right-top-icon">
+                        <div class="wrap-icon">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="wrap-icon">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="section-ad__right-top-wrap">
+                        <img src="/src/assets/images/qcTopRight1.png" alt="" class="section-ad__right-top-wrap-img">
+                        <img src="/src/assets/images/qcTopRight1.png" alt="" class="section-ad__right-top-wrap-img">
+                        <img src="/src/assets/images/qcTopRight1.png" alt="" class="section-ad__right-top-wrap-img">
+                    </div>
+                </div>
+                <div class="section-ad__right-bottom">
+                    <div class="section-ad__right-bottom-icon">
+                        <div class="wrap-icon">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="wrap-icon">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="section-ad__right-bottom-wrap">
+                        <img src="/src/assets/images/qcTopRight3.png" alt="" class="section-ad__right-bottom-wrap-img">
+                        <img src="/src/assets/images/qcTopRight3.png" alt="" class="section-ad__right-bottom-wrap-img">
+                        <img src="/src/assets/images/qcTopRight3.png" alt="" class="section-ad__right-bottom-wrap-img">
+                    </div>
+                </div>
+            </section>
+            <section class="product-laptops">
+                <div class="laptops-name">
+                    <a href="#" class="laptops-name__link font">Laptop</a>
+                    <a href="#" class="laptops-name__link">Macbook</a>
+                    <a href="#" class="laptops-name__link">Asus</a>
+                    <a href="#" class="laptops-name__link">Dell</a>
+                    <a href="#" class="laptops-name__link">HP</a>
+                    <a href="#" class="laptops-name__link">Lenovo</a>
+                </div>
+                <div class="laptops-img-product">
+                    <a href="#" class="laptops-img-product__box box1">
+                        <img src="/src/assets/images/lenovo.png" alt="" class="laptops-img-product__box-img">
+                        <div class="laptops-img-product__box-desc">
+                            <p>
+                                Laptop Lenovo LOQ Gaming 15IRH8 i5 13420H/ 16GB/ 512GB/ 6GB RTX4050/ 144Hz/Win11
+                            </p>
+                            <div class="laptops-img-product__box-desc-price">
+                                <span class="root-price">
+                                    31.999.000đ
+                                </span>
+                                <span class="discount">
+                                    24.999.000đ
+                                </span>
+                            </div>
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="laptops-img-product__box box2">
+                        <img src="/src/assets/images/asus.png" alt="" class="laptops-img-product__box-img">
+                        <div class="laptops-img-product__box-desc">
+                            <p>
+                                Laptop ASUS TUF Gaming F15 FX506HF HN014W
+                            </p>
+                            <div class="laptops-img-product__box-desc-price">
+                                <span class="root-price">
+                                    31.999.000đ
+                                </span>
+                                <span class="discount">
+                                    24.999.000đ
+                                </span>
+                            </div>
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="laptops-img-product__box box3">
+                        <img src="/src/assets/images/hp.png" alt="" class="laptops-img-product__box-img">
+                        <div class="laptops-img-product__box-desc">
+                            <p>
+                                Laptop HP 15-dy2152wm 15.6 pulgadas Full HD Intel Core i5 Intel Iris XE 8 GB RAM 512 GB SSD 
+                            </p>
+                            <div class="laptops-img-product__box-desc-price">
+                                <span class="root-price">
+                                    
+                                </span>
+                                <span class="discount">
+                                    14.990.000đ
+                                </span>
+                            </div>
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="laptops-img-product__box box4">
+                        <img src="/src/assets/images/acer.png" alt="" class="laptops-img-product__box-img">
+                        <div class="laptops-img-product__box-desc">
+                            <p>
+                                Acer Nitro 5 AN515-55 Core i5 10300H / 16GB / 512GB / GTX 1650Ti 4GB / 15.6″ FHD 144Hz 
+                            </p>
+                            <div class="laptops-img-product__box-desc-price">
+                                <span class="root-price">
+                                    
+                                </span>
+                                <span class="discount">
+                                    13.990.000đ
+                                </span>
+                            </div>
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="laptops-img-product__box box5">
+                        <img src="/src/assets/images/acer.png" alt="" class="laptops-img-product__box-img">
+                        <div class="laptops-img-product__box-desc">
+                            <p>
+                                Acer Nitro 5 AN515-55 Core i5 10300H / 16GB / 512GB / GTX 1650Ti 4GB / 15.6″ FHD 144Hz 
+                            </p>
+                            <div class="laptops-img-product__box-desc-price">
+                                <span class="root-price">
+                                    31.999.000đ
+                                </span>
+                                <span class="discount">
+                                    24.999.000đ
+                                </span>
+                            </div>
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="laptops-img-product__box box6">
+                        <img src="/src/assets/images/acer.png" alt="" class="laptops-img-product__box-img">
+                        <div class="laptops-img-product__box-desc">
+                            <p>
+                                Acer Nitro 5 AN515-55 Core i5 10300H / 16GB / 512GB / GTX 1650Ti 4GB / 15.6″ FHD 144Hz 
+                            </p>
+                            <div class="laptops-img-product__box-desc-price">
+                                <span class="root-price">
+                                    31.999.000đ
+                                </span>
+                                <span class="discount">
+                                    24.999.000đ
+                                </span>
+                            </div>
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="laptops-img-product__box box7">
+                        <img src="/src/assets/images/acer.png" alt="" class="laptops-img-product__box-img">
+                        <div class="laptops-img-product__box-desc">
+                            <p>
+                                Acer Nitro 5 AN515-55 Core i5 10300H / 16GB / 512GB / GTX 1650Ti 4GB / 15.6″ FHD 144Hz 
+                            </p>
+                            <div class="laptops-img-product__box-desc-price">
+                                <span class="root-price">
+                                    31.999.000đ
+                                </span>
+                                <span class="discount">
+                                    24.999.000đ
+                                </span>
+                            </div>
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="laptops-img-product__box box8">
+                        <img src="/src/assets/images/acer.png" alt="" class="laptops-img-product__box-img">
+                        <div class="laptops-img-product__box-desc">
+                            <p>
+                                Acer Nitro 5 AN515-55 Core i5 10300H / 16GB / 512GB / GTX 1650Ti 4GB / 15.6″ FHD 144Hz 
+                            </p>
+                            <div class="laptops-img-product__box-desc-price">
+                                <span class="root-price">
+                                    31.999.000đ
+                                </span>
+                                <span class="discount">
+                                    24.999.000đ
+                                </span>
+                            </div>
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="mobilephone">
+                <div class="mobilephone-name">
+                    <a href="#" class="mobilephone-name__link font">Apple</a>
+                    <a href="#" class="mobilephone-name__link">Samsung</a>
+                    <a href="#" class="mobilephone-name__link">Oppo</a>
+                    <a href="#" class="mobilephone-name__link">Nokia</a>
+                    <a href="#" class="mobilephone-name__link">Realme</a>
+                </div>
+                <div class="mobilephone-product">
+                    <div class="mobilephone-product__box box1">
+                        <a href="#" class="mobilephone-product__box-item">
+                            <div class="mobilephone-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="mobile-img">
+                            </div>
+                            <div class="mobilephone-product__box-item-info">
+                                <div class="mobile-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="mobile-info-price">
+                                    <div class="mobile-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-cart-phone">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mobilephone-product__box box2">
+                        <a href="#" class="mobilephone-product__box-item">
+                            <div class="mobilephone-product__box-item-img">
+                                <img src="/src/assets/images/realme.png" alt="" class="mobile-img">
+                            </div>
+                            <div class="mobilephone-product__box-item-info">
+                                <div class="mobile-info-name">
+                                    Xiaomi Redmi Note 12 Turbo (8GB|256GB) Snap 7+ Gen 2 LikeNew 
+                                </div>
+                                <div class="mobile-info-price">
+                                    <div class="mobile-discount">
+                                        4.890.000đ
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-cart-phone">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mobilephone-product__box box3">
+                        <a href="#" class="mobilephone-product__box-item">
+                            <div class="mobilephone-product__box-item-img">
+                                <img src="/src/assets/images/oppoa95.png" alt="" class="mobile-img">
+                            </div>
+                            <div class="mobilephone-product__box-item-info">
+                                <div class="mobile-info-name">
+                                    OPPO A95 5G
+                                </div>
+                                <div class="mobile-info-price">
+                                    <div class="mobile-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-cart-phone">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mobilephone-product__box box4 image">
+                        <a href="#" class="mobilephone-product__box-item">
+                            <img src="/src/assets/images/saleoppo.png" alt="" class="mobile-img">
+                        </a>
+                    </div>
+                    <div class="mobilephone-product__box box5">
+                        <a href="#" class="mobilephone-product__box-item">
+                            <div class="mobilephone-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="mobile-img">
+                            </div>
+                            <div class="mobilephone-product__box-item-info">
+                                <div class="mobile-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="mobile-info-price">
+                                    <div class="mobile-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-cart-phone">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mobilephone-product__box box6">
+                        <a href="#" class="mobilephone-product__box-item">
+                            <div class="mobilephone-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="mobile-img">
+                            </div>
+                            <div class="mobilephone-product__box-item-info">
+                                <div class="mobile-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="mobile-info-price">
+                                    <div class="mobile-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-cart-phone">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mobilephone-product__box box7">
+                        <a href="#" class="mobilephone-product__box-item">
+                            <div class="mobilephone-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="mobile-img">
+                            </div>
+                            <div class="mobilephone-product__box-item-info">
+                                <div class="mobile-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="mobile-info-price">
+                                    <div class="mobile-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-cart-phone">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mobilephone-product__box box8">
+                        <a href="#" class="mobilephone-product__box-item">
+                            <div class="mobilephone-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="mobile-img">
+                            </div>
+                            <div class="mobilephone-product__box-item-info">
+                                <div class="mobile-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="mobile-info-price">
+                                    <div class="mobile-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-cart-phone">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mobilephone-product__box box9">
+                        <a href="#" class="mobilephone-product__box-item">
+                            <div class="mobilephone-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="mobile-img">
+                            </div>
+                            <div class="mobilephone-product__box-item-info">
+                                <div class="mobile-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="mobile-info-price">
+                                    <div class="mobile-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-cart-phone">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="accessory">
+                <div class="accessory-name">
+                    <a href="#" class="accessory-name__link font">Apple</a>
+                    <a href="#" class="accessory-name__link">Samsung</a>
+                    <a href="#" class="accessory-name__link">Oppo</a>
+                    <a href="#" class="accessory-name__link">Nokia</a>
+                    <a href="#" class="accessory-name__link">Realme</a>
+                </div>
+                <div class="accessory-product">
+                    <div class="accessory-product__box image">
+                        <a href="#" class="accessory-product__box-item">
+                            <img src="/src/assets/images/sale.png" alt="" class="accessory-img">
+                        </a>
+                    </div>
+                    <div class="accessory-product__box box2">
+                        <a href="#" class="accessory-product__box-item">
+                            <div class="accessory-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="accessory-img">
+                            </div>
+                            <div class="accessory-product__box-item-info">
+                                <div class="accessory-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="accessory-info-price">
+                                    <div class="accessory-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+                                        900900
+                                    </div>
+                                </div>
+                                <button class="add-accessory-cart">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="accessory-product__box box3">
+                        <a href="#" class="accessory-product__box-item">
+                            <div class="accessory-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="accessory-img">
+                            </div>
+                            <div class="accessory-product__box-item-info">
+                                <div class="accessory-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="accessory-info-price">
+                                    <div class="accessory-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-accessory-cart">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="accessory-product__box box4">
+                        <a href="#" class="accessory-product__box-item">
+                            <div class="accessory-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="accessory-img">
+                            </div>
+                            <div class="accessory-product__box-item-info">
+                                <div class="accessory-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="accessory-info-price">
+                                    <div class="accessory-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-accessory-cart">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="accessory-product__box box5">
+                        <a href="#" class="accessory-product__box-item">
+                            <div class="accessory-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="accessory-img">
+                            </div>
+                            <div class="accessory-product__box-item-info">
+                                <div class="accessory-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="accessory-info-price">
+                                    <div class="accessory-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-accessory-cart">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="accessory-product__box box6">
+                        <a href="#" class="accessory-product__box-item">
+                            <div class="accessory-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="accessory-img">
+                            </div>
+                            <div class="accessory-product__box-item-info">
+                                <div class="accessory-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="accessory-info-price">
+                                    <div class="accessory-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-accessory-cart">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="accessory-product__box box7">
+                        <a href="#" class="accessory-product__box-item">
+                            <div class="accessory-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="accessory-img">
+                            </div>
+                            <div class="accessory-product__box-item-info">
+                                <div class="accessory-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="accessory-info-price">
+                                    <div class="accessory-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-accessory-cart">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="accessory-product__box box8">
+                        <a href="#" class="accessory-product__box-item">
+                            <div class="accessory-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="accessory-img">
+                            </div>
+                            <div class="accessory-product__box-item-info">
+                                <div class="accessory-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="accessory-info-price">
+                                    <div class="accessory-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-accessory-cart">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="accessory-product__box box9">
+                        <a href="#" class="accessory-product__box-item">
+                            <div class="accessory-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="accessory-img">
+                            </div>
+                            <div class="accessory-product__box-item-info">
+                                <div class="accessory-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="accessory-info-price">
+                                    <div class="accessory-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-accessory-cart">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="accessory-product__box box10">
+                        <a href="#" class="accessory-product__box-item">
+                            <div class="accessory-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="accessory-img">
+                            </div>
+                            <div class="accessory-product__box-item-info">
+                                <div class="accessory-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="accessory-info-price">
+                                    <div class="accessory-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-accessory-cart">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="accessory-product__box box11">
+                        <a href="#" class="accessory-product__box-item">
+                            <div class="accessory-product__box-item-img">
+                                <img src="/src/assets/images/oppo.png" alt="" class="accessory-img">
+                            </div>
+                            <div class="accessory-product__box-item-info">
+                                <div class="accessory-info-name">
+                                    OPPO Reno11 Pro 5G (Reno11 China) (8GB|256GB) Dimensity 8200 New Nobox
+                                </div>
+                                <div class="accessory-info-price">
+                                    <div class="accessory-discount">
+                                        7,390,000₫
+                                    </div>
+                                    <div class="root-price">
+
+                                    </div>
+                                </div>
+                                <button class="add-accessory-cart">
+                                   <i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="addvertise">
+                <div class="addvertise-wrap">
+                    <img src="/src/assets/images/qcphone.png" alt="" class="addvertise-wrap__img">
+                    <img src="/src/assets/images/phukien.png" alt="" class="addvertise-wrap__img">
+                </div>
+            </section>
+
+        </div>
+        <footer class="footer">
+            <div class="footer__nav">
+                <a href="#" class="footer__nav-item">
+                    <i class="fa-solid fa-rotate"></i>
+                    ĐỔI TRẢ TRONG VÒNG 30 NGÀY
+                </a>
+                <a href="#" class="footer__nav-item">
+                    <i class="fa-solid fa-car-side"></i>
+                    GIAO HÀNG TOÀN QUỐC
+                </a>
+                <a href="#" class="footer__nav-item">
+                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                    THANH TOÁN KHI NHẬN HÀNG
+                </a>
+            </div>
+            <div class="footer__wrap">
+                <div class="footer__wrap-item">
+                    <h2 class="footer__wrap-item-title">
+                        SẢN PHẨM
+                    </h2>
+                    <a href="#">Laptop</a>
+                    <a href="#">Phụ kiện</a>
+                    <a href="#">Khuyến mãi</a>
+                </div>
+                <div class="footer__wrap-item">
+                    <h2 class="footer__wrap-item-title">
+                        HỖ TRỢ KHÁCH HÀNG
+                    </h2>
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Tin tức</a>
+                    <a href="#">Tin khuyến mãi</a>
+                    <a href="#">Tuyển dụng</a>
+                </div>
+                <div class="footer__wrap-item">
+                    <h2 class="footer__wrap-item-title">
+                        HỖ TRỢ KHÁCH HÀNG
+                    </h2>
+                    <a href="#">Hỗ trợ mua hàng trực tuyến</a>
+                    <a href="#">Các hình thức thanh toán</a>
+                    <a href="#">Hướng dẫn mua hàng trực tuyến</a>
+                    <a href="#">Phát hành hóa đơn</a>
+                </div>
+                <div class="footer__wrap-item">
+                    <h2 class="footer__wrap-item-title">
+                        CHẤP NHẬN THANH TOÁN
+                    </h2>
+                    <div class="footer__wrap-item-img">
+                        <img src="https://mauweb.monamedia.net/broshop/wp-content/uploads/2019/03/payment.png" alt="" class="img-band">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                © All rights reserved. Thiết kế website
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+</html>
